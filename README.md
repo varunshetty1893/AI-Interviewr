@@ -166,23 +166,6 @@ The database is created automatically on first run. ✅
 
 ---
 
-## 🧪 Running the Automated Test
-
-The Selenium test automatically signs up, fills the setup form, answers all questions, and generates a report.
-
-**Install test dependencies:**
-```bash
-pip install selenium webdriver-manager
-```
-
-**Make sure the app is running first, then:**
-```bash
-python test_interview.py
-```
-
-> Chrome will open automatically and you can watch the test run live.
-
----
 
 ## 📊 Score Report Breakdown
 
@@ -206,18 +189,6 @@ Final score = average of all 5 dimensions (skipped questions are penalised).
 | `FLASK_SECRET_KEY` | Flask session secret | ✅ Yes |
 
 > ⚠️ Never commit your `.env` file. It is already in `.gitignore`.
-
----
-
-## 🛑 Stopping the App
-
-```bash
-# Windows — kill all Python processes
-taskkill /F /IM python.exe
-
-# Mac / Linux
-pkill -f "python app.py"
-```
 
 ---
 
